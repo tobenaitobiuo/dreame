@@ -15,7 +15,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Udy-S4-zck">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <connections>
+                                    <action selector="storyBoradSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="e0C-hw-qDN"/>
+                                </connections>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Udy-S4-zck" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8bj-Gy-C56"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Udy-S4-zck" secondAttribute="bottom" constant="70" id="DE8-V9-mXZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Udy-S4-zck"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="DE8-V9-mXZ"/>
+                                <exclude reference="8bj-Gy-C56"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Udy-S4-zck"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="DE8-V9-mXZ"/>
+                                <include reference="8bj-Gy-C56"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>

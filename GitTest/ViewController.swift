@@ -9,6 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+	@IBAction func storyBoradSwitch(sender: UISwitch) {
+		if sender.on {
+			myLabel.text = "On"
+			myLabel.backgroundColor = UIColor.orangeColor()
+		}
+		else {
+			myLabel.text = "Off"
+			myLabel.backgroundColor = UIColor.grayColor()
+		}
+	}
 	private var myLabel: UILabel!
 	override func viewDidLoad() {
 		super.viewDidLoad()
